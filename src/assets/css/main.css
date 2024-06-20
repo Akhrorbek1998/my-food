@@ -1,0 +1,55 @@
+.example {
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+input[type="radio"]:checked + label {
+  background-color: #2d303e;
+  cursor: pointer;
+  border: 2px solid #abbbc2;
+}
+
+input[type="radio"]:checked + label p {
+  color: white;
+}
+input[type="radio"]:checked + label > span {
+  display: flex !important;
+  color: red;
+}
+
+#payment-btn:hover + button {
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid #ea7c69;
+  color: #ea7c69;
+}
+
+.delete-btn {
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ea7c69;
+}
+
+.delete-btn:hover .delete-button-icon > path {
+  fill: white;
+}
+
+/* text slice styles */
+.payment-item-title {
+  white-space: nowrap;
+  width: 145px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
